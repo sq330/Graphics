@@ -23,6 +23,12 @@ all_project_ci_nightly_trunk:
     dependencies:
       -  path: .yamato/_abv.yml#all_project_ci_trunk
          rerun: on-new-revision
+      -  path: .yamato/assignment_urp-win-dx11.yml#Assignment_URP_Win_DX11_playmode_mono_apiNet2_Linear_trunk
+         rerun: on-new-revision
+      -  path: .yamato/assignment_urp-win-dx11.yml#Assignment_URP_Win_DX11_editmode_mono_apiNet2_Linear_trunk
+         rerun: on-new-revision
+      -  path: .yamato/assignment_urp-win-dx11.yml#Assignment_URP_Win_DX11_Standalone_mono_apiNet2_Linear_trunk
+         rerun: on-new-revision
       -  path: .yamato/smoke_test-win-dx11.yml#Smoke_Test_Win_DX11_playmode_mono_apiNet2_Linear_trunk
          rerun: on-new-revision
       -  path: .yamato/smoke_test-win-dx11.yml#Smoke_Test_Win_DX11_editmode_mono_apiNet2_Linear_trunk
@@ -99,6 +105,12 @@ all_project_ci_nightly_2020.2:
     name: _Nightly ABV against 2020.2
     dependencies:
       -  path: .yamato/_abv.yml#all_project_ci_2020.2
+         rerun: on-new-revision
+      -  path: .yamato/assignment_urp-win-dx11.yml#Assignment_URP_Win_DX11_playmode_mono_apiNet2_Linear_2020.2
+         rerun: on-new-revision
+      -  path: .yamato/assignment_urp-win-dx11.yml#Assignment_URP_Win_DX11_editmode_mono_apiNet2_Linear_2020.2
+         rerun: on-new-revision
+      -  path: .yamato/assignment_urp-win-dx11.yml#Assignment_URP_Win_DX11_Standalone_mono_apiNet2_Linear_2020.2
          rerun: on-new-revision
       -  path: .yamato/smoke_test-win-dx11.yml#Smoke_Test_Win_DX11_playmode_mono_apiNet2_Linear_2020.2
          rerun: on-new-revision
